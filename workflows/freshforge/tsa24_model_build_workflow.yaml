@@ -1,0 +1,95 @@
+workflow:
+  id: tsa24_model_build
+  name: TSA 24 FEMIC model-build workflow
+  description: >
+    Instance-owned FreshForge graph for the TSA 24 WBI AOI model build
+    (compile -> BTC/TIPSY bundle -> Woodstock export -> ws3 section handoff).
+nodes:
+  - id: validate_case
+    provider: femic.validate_case
+    outputs:
+      case_validation: case_preflight_ok
+    parameters:
+      instance_root: external/femic-tsa24-instance
+      run_config: config/run_profile.tsa24.yaml
+      tipsy_config_dir: config/tipsy
+
+  - id: geospatial_preflight
+    provider: femic.geospatial_preflight
+    needs: [validate_case]
+    inputs:
+      case_validation: validate_case.case_validation
+    outputs:
+      geospatial_runtime: geospatial_runtime_ok
+    parameters:
+      instance_root: external/femic-tsa24-instance
+
+  - id: compile_upstream
+    provider: femic.compile_upstream
+    needs: [geospatial_preflight]
+    inputs:
+      geospatial_runtime: geospatial_preflight.geospatial_runtime
+    outputs:
+      btc_handoff: stage01a_btc_handoff
+    parameters:
+      instance_root: external/femic-tsa24-instance
+      run_config: config/run_profile.tsa24.yaml
+      run_id: tsa24_model_build
+      log_dir: runtime/logs
+    artifacts:
+      run_manifest: runtime/logs/run_manifest-tsa24_model_build.json
+
+  - id: btc_post_tipsy
+    provider: femic.btc_post_tipsy
+    needs: [compile_upstream]
+    inputs:
+      btc_handoff: compile_upstream.btc_handoff
+    outputs:
+      model_input_bundle: data/model_input_bundle
+    parameters:
+      instance_root: external/femic-tsa24-instance
+      run_config: config/run_profile.tsa24.yaml
+      tsa: "24"
+      run_id: tsa24_model_build
+      log_dir: runtime/logs
+    artifacts:
+      btc_manifest: runtime/logs/btc_manifest-tsa24_model_build.json
+      post_tipsy_manifest: runtime/logs/run_manifest-post_tipsy_tsa24_model_build.json
+
+  - id: export_woodstock
+    provider: femic.export_woodstock
+    needs: [btc_post_tipsy]
+    inputs:
+      model_input_bundle: btc_post_tipsy.model_input_bundle
+    outputs:
+      woodstock_csvs: output/woodstock
+    parameters:
+      instance_root: external/femic-tsa24-instance
+      tsa: "24"
+      bundle_dir: data/model_input_bundle
+      checkpoint: data/ria_vri_vclr1p_checkpoint7.feather
+      output_dir: output/woodstock
+    artifacts:
+      yields: output/woodstock/woodstock_yields.csv
+      areas: output/woodstock/woodstock_areas.csv
+      actions: output/woodstock/woodstock_actions.csv
+      transitions: output/woodstock/woodstock_transitions.csv
+
+  - id: ws3_bridge
+    provider: femic.ws3_bridge
+    needs: [export_woodstock]
+    inputs:
+      woodstock_csvs: export_woodstock.woodstock_csvs
+    outputs:
+      ws3_sections: output/ws3
+    parameters:
+      instance_root: external/femic-tsa24-instance
+      woodstock_dir: output/woodstock
+      output_dir: output/ws3
+      model_name: tsa24
+    artifacts:
+      lan: output/ws3/tsa24.lan
+      are: output/ws3/tsa24.are
+      yld: output/ws3/tsa24.yld
+      act: output/ws3/tsa24.act
+      trn: output/ws3/tsa24.trn

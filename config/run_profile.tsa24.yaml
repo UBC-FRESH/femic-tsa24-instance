@@ -4,7 +4,7 @@ selection:
   strata: []
 
 modes:
-  resume: true
+  resume: false
   dry_run: false
   verbose: true
   skip_checks: false

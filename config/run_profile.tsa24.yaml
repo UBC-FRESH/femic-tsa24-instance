@@ -1,0 +1,15 @@
+selection:
+  tsa:
+    - "24"
+  strata: []
+
+modes:
+  resume: true
+  dry_run: false
+  verbose: true
+  skip_checks: false
+  debug_rows: null
+
+run:
+  run_id: "tsa24"
+  log_dir: "vdyp_io/profile_logs"

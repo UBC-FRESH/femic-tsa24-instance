@@ -20,10 +20,7 @@ Baselines (no bird floors; maximize `totvol * 0.85`):
 | 40 | 431,387,820 | 434,793,181 | 437,999,468 | 570,784,060 |
 | 41 | 288,739,849 | 291,035,361 | 293,171,269 | 382,868,669 |
 
-The no-even-flow column is the epsilon=None runs normalized to util=1 (from the
-utilization runs below). The even-flow opportunity cost is dominated by the
-constraint's presence (-24..-25% of maximum harvest); the epsilon level itself
-moves the baseline by ~1.5% over 0.05-0.15.
+The no-even-flow column is the epsilon=None runs normalized to util=1 (from the utilization runs below). Basis: these volumes are at utilization 1.0, whereas the epsilon columns are reported at 0.85. The matched-utilization even-flow cost (epsilon=0.10 versus no even-flow, both at utilization 0.85) is 10.4% (TSA40) to 13.8% (TSA08). An earlier headline of -24..-25% compared 0.85-utilization volumes with utilization-1.0 volumes; it mixes two accounting factors, is retracted, and is not a cost estimate. The epsilon level itself moves the baseline by about 1.5% over 0.05-0.15.
 
 At the 1.05 bird floor (birds matched; harvest):
 

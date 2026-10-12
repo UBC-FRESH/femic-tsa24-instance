@@ -61,3 +61,12 @@ abundance gains are cheap or tightly constrained by harvest.
 
 Evidence: engine `wbi-birds` v1.0.0 (`run_scenario`, `constraint_floor`), femic
 P113.5 campaign sections. Method: `femic/external/femic-tsa24-instance/evidence/p113_5_campaign_config_2026-10-12.md`.
+
+## Pareto check (added 2026-10-12)
+
+Frontier points (uniform per-period floors) that are Pareto-dominated by another epsilon = 0.10 solution (partition, frontier, or max-bird endpoint) in this TSA: frontier 1.05.
+
+Profile comparison at the same bird total (frontier harvest relative to the partition curve, piecewise linear in birds):
+
+- frontier 1.02: +0.3% harvest relative to the partition profile
+- frontier 1.05: -9.8% harvest relative to the partition profile

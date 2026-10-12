@@ -92,6 +92,8 @@ Scenario CSVs: `tsa<XX>-cbird<0.00..1.00>.csv` (deltas vs the nadir).
 - An earlier variant approximated the maximum by bisection on a flat multiple
   of the nadir series; it underestimates the bird range (e.g. TSA24 +8.2% vs
   +18.2% true). The proxy CSVs are preserved in the run environment only.
-- Bird-abundance steps are even by construction (the floors interpolate between
-  the two endpoint series); harvest steps steepen with the bird level (convex
-  opportunity cost).
+- Intended bird totals are evenly spaced by construction (the floors interpolate the two endpoint series period by period). Realized totals depart from that grid wherever the even-flow band leaves slack; the largest departure per TSA is listed below and in campaign_metrics_2026-10-12.md. Harvest steps steepen with the bird level (convex opportunity cost).
+
+## Realized vs intended (TSA24)
+
+Largest departure of realized bird totals from the intended evenly spaced levels: +1.9% of one step at w = 0.1. Dominated points among the epsilon = 0.10 solutions: partition 0.10, frontier 1.05.

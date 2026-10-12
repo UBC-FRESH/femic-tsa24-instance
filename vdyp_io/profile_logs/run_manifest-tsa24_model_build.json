@@ -1,0 +1,77 @@
+{
+  "artifacts": {
+    "bundle_tables": [
+      {
+        "exists": true,
+        "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/model_input_bundle/au_table.csv"
+      },
+      {
+        "exists": true,
+        "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/model_input_bundle/curve_table.csv"
+      },
+      {
+        "exists": true,
+        "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/model_input_bundle/curve_points_table.csv"
+      }
+    ],
+    "tipsy_curves": [
+      {
+        "exists": true,
+        "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/tipsy_curves_tsa24.csv"
+      }
+    ],
+    "tipsy_sppcomp": [
+      {
+        "exists": true,
+        "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/tipsy_sppcomp_tsa24.csv"
+      }
+    ]
+  },
+  "duration_sec": 14.417,
+  "env_flags": {
+    "FEMIC_DISABLE_IPP": null,
+    "FEMIC_SAMPLING_SEED": null,
+    "FEMIC_USE_SWIFTER": null
+  },
+  "error_message": null,
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-11T20:20:01.464008+00:00",
+  "log_dir": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs",
+  "outputs": {
+    "au_rows": 27,
+    "au_table_path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/model_input_bundle/au_table.csv",
+    "curve_points_rows": 10393,
+    "curve_points_table_path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/model_input_bundle/curve_points_table.csv",
+    "curve_rows": 1892,
+    "curve_table_path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/model_input_bundle/curve_table.csv"
+  },
+  "run_id": "tsa24_model_build",
+  "run_uuid": "c204b86b-513e-4bbf-873f-4ace34734270",
+  "runtime_parameters": {
+    "femic_log_dir": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs",
+    "femic_run_id": "tsa24_model_build",
+    "femic_sampling_seed": null,
+    "femic_tsa_list": "24"
+  },
+  "runtime_versions": {
+    "femic": "0.2.0a1",
+    "packages": {
+      "geopandas": "1.2.0",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "rasterio": "1.5.2",
+      "rich": "15.0.0",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "typer": "0.27.3"
+    },
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "started_at_utc": "2026-10-11T20:19:47.036032+00:00",
+  "status": "ok",
+  "tsa_list": [
+    "24"
+  ],
+  "workflow": "tsa_post_tipsy"
+}

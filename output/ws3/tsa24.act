@@ -1,0 +1,30 @@
+ACTIONS
+*ACTION cc Y
+*OPERABLE cc
+24 managed 2401000 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401001 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401002 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401003 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401004 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401005 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401006 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401007 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2401008 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402000 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402001 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402002 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402003 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402004 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402005 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402006 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402007 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2402008 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403000 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403001 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403002 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403003 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403004 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403005 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403006 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403007 ? ? _AGE >= 8 AND _AGE <= 40
+24 managed 2403008 ? ? _AGE >= 8 AND _AGE <= 40

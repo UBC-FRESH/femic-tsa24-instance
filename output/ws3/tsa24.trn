@@ -1,0 +1,55 @@
+*CASE cc
+*SOURCE 24 managed 2401000 ? ?
+*TARGET 24 managed 2401000 sbs_sx 2401000 100
+*SOURCE 24 managed 2401001 ? ?
+*TARGET 24 managed 2401001 essf_bl 2401001 100
+*SOURCE 24 managed 2401002 ? ?
+*TARGET 24 managed 2401002 sbs_pli 2421002 100
+*SOURCE 24 managed 2401003 ? ?
+*TARGET 24 managed 2401003 sbs_bl 2401003 100
+*SOURCE 24 managed 2401004 ? ?
+*TARGET 24 managed 2401004 essf_se 2401004 100
+*SOURCE 24 managed 2401005 ? ?
+*TARGET 24 managed 2401005 sbs_at 2401005 100
+*SOURCE 24 managed 2401006 ? ?
+*TARGET 24 managed 2401006 sbs_at+sx 2401006 100
+*SOURCE 24 managed 2401007 ? ?
+*TARGET 24 managed 2401007 sbs_sx+at 2421007 100
+*SOURCE 24 managed 2401008 ? ?
+*TARGET 24 managed 2401008 sbs_fdi 2421008 100
+*SOURCE 24 managed 2402000 ? ?
+*TARGET 24 managed 2402000 sbs_sx 2422000 100
+*SOURCE 24 managed 2402001 ? ?
+*TARGET 24 managed 2402001 essf_bl 2402001 100
+*SOURCE 24 managed 2402002 ? ?
+*TARGET 24 managed 2402002 sbs_pli 2422002 100
+*SOURCE 24 managed 2402003 ? ?
+*TARGET 24 managed 2402003 sbs_bl 2422003 100
+*SOURCE 24 managed 2402004 ? ?
+*TARGET 24 managed 2402004 essf_se 2422004 100
+*SOURCE 24 managed 2402005 ? ?
+*TARGET 24 managed 2402005 sbs_at 2402005 100
+*SOURCE 24 managed 2402006 ? ?
+*TARGET 24 managed 2402006 sbs_at+sx 2402006 100
+*SOURCE 24 managed 2402007 ? ?
+*TARGET 24 managed 2402007 sbs_sx+at 2422007 100
+*SOURCE 24 managed 2402008 ? ?
+*TARGET 24 managed 2402008 sbs_fdi 2422008 100
+*SOURCE 24 managed 2403000 ? ?
+*TARGET 24 managed 2403000 sbs_sx 2423000 100
+*SOURCE 24 managed 2403001 ? ?
+*TARGET 24 managed 2403001 essf_bl 2423001 100
+*SOURCE 24 managed 2403002 ? ?
+*TARGET 24 managed 2403002 sbs_pli 2423002 100
+*SOURCE 24 managed 2403003 ? ?
+*TARGET 24 managed 2403003 sbs_bl 2423003 100
+*SOURCE 24 managed 2403004 ? ?
+*TARGET 24 managed 2403004 essf_se 2423004 100
+*SOURCE 24 managed 2403005 ? ?
+*TARGET 24 managed 2403005 sbs_at 2403005 100
+*SOURCE 24 managed 2403006 ? ?
+*TARGET 24 managed 2403006 sbs_at+sx 2403006 100
+*SOURCE 24 managed 2403007 ? ?
+*TARGET 24 managed 2403007 sbs_sx+at 2423007 100
+*SOURCE 24 managed 2403008 ? ?
+*TARGET 24 managed 2403008 sbs_fdi 2423008 100

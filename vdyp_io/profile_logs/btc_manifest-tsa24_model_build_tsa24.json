@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "error_csv": {
+      "exists": true,
+      "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/04_error-tsa24.csv"
+    },
+    "output_csv": {
+      "exists": true,
+      "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/04_output-tsa24.csv"
+    },
+    "stderr_log": {
+      "exists": true,
+      "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs/btc_stderr-tsa24_model_build_tsa24.log"
+    },
+    "stdout_log": {
+      "exists": true,
+      "path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs/btc_stdout-tsa24_model_build_tsa24.log"
+    }
+  },
+  "command": [
+    "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/btc_install/tipsybtc-wine.sh",
+    "/TSR",
+    "03_input-tsa24.csv",
+    "04_output-tsa24.csv",
+    "04_error-tsa24.csv"
+  ],
+  "copied_install": true,
+  "discovery_source": "explicit",
+  "duration_sec": 13.808,
+  "error_csv": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/04_error-tsa24.csv",
+  "error_message": null,
+  "executable_path": "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/btc_install/tipsybtc-wine.sh",
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-11T20:19:47.009039+00:00",
+  "indicator_bank_names": [],
+  "input_csv": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/03_input-tsa24.csv",
+  "install_root": "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/btc_install",
+  "log_dir": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs",
+  "mode": "TSR",
+  "output_csv": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/data/04_output-tsa24.csv",
+  "report_template_path": "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/btc_install/TimberSupply.rpt",
+  "run_id": "tsa24_model_build_tsa24",
+  "runtime_versions": {
+    "femic": "0.2.0a1",
+    "packages": {
+      "geopandas": "1.2.0",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "rasterio": "1.5.2",
+      "rich": "15.0.0",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "typer": "0.27.3"
+    },
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "staged_error_csv": "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/work/04_error-tsa24.csv",
+  "staged_input_csv": "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/work/03_input-tsa24.csv",
+  "staged_output_csv": "/srv/shared-data/gep/wbi-birds/femic/tipsy_io/scratch/btc-tsa24_model_build_tsa24/work/04_output-tsa24.csv",
+  "started_at_utc": "2026-10-11T20:19:33.199799+00:00",
+  "status": "ok",
+  "stderr_log_path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs/btc_stderr-tsa24_model_build_tsa24.log",
+  "stdout_log_path": "/srv/shared-data/gep/wbi-birds/femic/external/femic-tsa24-instance/vdyp_io/profile_logs/btc_stdout-tsa24_model_build_tsa24.log",
+  "uses_live_overlay": false,
+  "windows_dialog_cleanup": null
+}

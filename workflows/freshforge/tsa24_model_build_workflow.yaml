@@ -91,7 +91,7 @@ nodes:
       woodstock_dir: output/woodstock
       output_dir: output/ws3
       model_name: tsa24
-      period_length: 5
+      period_length: 10
     artifacts:
       lan: output/ws3/tsa24.lan
       are: output/ws3/tsa24.are

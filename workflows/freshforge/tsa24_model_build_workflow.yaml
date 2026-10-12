@@ -69,6 +69,10 @@ nodes:
       bundle_dir: data/model_input_bundle
       checkpoint: data/ria_vri_vclr1p_checkpoint7.feather
       output_dir: output/woodstock
+      cc_min_age: 80
+      cc_max_age: 400
+      initial_age_cap: 300
+      snap_initial_ages: 10
     artifacts:
       yields: output/woodstock/woodstock_yields.csv
       areas: output/woodstock/woodstock_areas.csv
@@ -87,6 +91,7 @@ nodes:
       woodstock_dir: output/woodstock
       output_dir: output/ws3
       model_name: tsa24
+      period_length: 5
     artifacts:
       lan: output/ws3/tsa24.lan
       are: output/ws3/tsa24.are

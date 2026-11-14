@@ -86,3 +86,7 @@ external/
 .DS_Store
 .vscode/
 .idea/
+
+# Local compiled artefacts and runtime
+build/
+runtime/
